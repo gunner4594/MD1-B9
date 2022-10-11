@@ -1,0 +1,17 @@
+var Image = {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+function changeImg () {
+
+}
