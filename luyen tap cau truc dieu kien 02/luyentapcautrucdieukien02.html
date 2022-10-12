@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen tap cau truc dieu kien 02</title>
+</head>
+<body>
+<!--Bai 1-->
+<!--<script>-->
+<!--  inputCelcius = +prompt('Enter Celcius value');-->
+<!--  let farenheit = inputCelcius * 9/5 + 32;-->
+<!--  document.write('Farenheit value is: ' + farenheit);-->
+<!--</script>-->
+
+<!--Bai 2-->
+<!--<script>-->
+<!--  inputMeter = +prompt('Enter Meter value');-->
+<!--  let feet = inputMeter * 3.2808;-->
+<!--  document.write('Feet value is: ' + feet);-->
+<!--</script>-->
+
+<!--Bai 3-->
+<!--<script>-->
+<!--  inputSquareEdge = +prompt('Enter Square Edge value');-->
+<!--  let area = inputSquareEdge**2;-->
+<!--  document.write('Area value is: ' + area);-->
+<!--</script>-->
+
+<!--Bai 4-->
+<!--<script>-->
+<!--    let leng = +prompt('Enter leng value');-->
+<!--    let width = +prompt('Enter width value');-->
+<!--    let area = leng*width;-->
+<!--    document.write('Area value is: ' + area);-->
+<!--</script>-->
+
+<!--Bai 5-->
+<!--<script>-->
+<!--    let sideLength1 = +prompt('Enter first side length value');-->
+<!--    let sideLength2 = +prompt('Enter second side length value');-->
+<!--    let area = 1/2 * sideLength1 * sideLength2;-->
+<!--    document.write('Area value is: ' + area);-->
+<!--</script>-->
+
+<!--Bai 6-->
+<!--Giải phương trình bậc 1 ax + b = 0-->
+<!--<script>-->
+<!--    let a = +prompt('Enter a');-->
+<!--    let b = +prompt('Enter b');-->
+<!--    let x = -b/a;-->
+<!--    if (a=0) {-->
+<!--        if (b=0) {-->
+<!--            document.write('Phuong trinh co vo so nghiem');-->
+<!--        } else {-->
+<!--            document.write('Phuong trinh vo nghiem');-->
+<!--        }-->
+<!--    } else {-->
+<!--        document.write('Phuong trinh co nghiem x =: '+ x);-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bai 7-->
+<!--Giải phương trình bậc 2 ax2 + bx + c = 0-->
+<!--<script>-->
+<!--let a = +prompt('Enter a');-->
+<!--let b = +prompt('Enter b');-->
+<!--let c = +prompt('Enter c');-->
+<!--let delta = b**2 - 4*a*c;-->
+<!--let x1 = (-b+ Math.sqrt(delta))/2*a;-->
+<!--let x2 = (-b- Math.sqrt(delta))/2*a;-->
+
+<!--if (delta<0) {-->
+<!--    document.write('Phuong trinh vo nghiem')-->
+<!--} else {-->
+<!--    if (delta=0) {-->
+<!--        document.write('Phuong trinh co nghiem kep x1=x2=: '+ x1)-->
+<!--    } else {-->
+<!--        document.write('Phuong trinh co 2 nghiem phan biet:' + x1 +' và ' + x2);-->
+<!--    }-->
+<!--}-->
+<!--</script>-->
+
+
+
+<!--Bai 8-->
+<!--Kiểm tra xem một số nhập vào có phải là tuổi của một người không. Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0.-->
+<!--<script>-->
+<!--    let age = +prompt('Enter age');-->
+<!--    if (age > 0) {-->
+<!--        if (age < 120) {-->
+<!--            document.write('Số nhập vào là tuổi của 1 người');-->
+<!--        } else {-->
+<!--            document.write('Số nhập vào không phải là tuổi của 1 người');-->
+<!--        }-->
+<!--    } else {-->
+<!--        document.write('Số nhập vào không phải là tuổi của 1 người')-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bai 9-->
+<!--Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác. Điều kiện để a,b,c là cạnh của một tam giác là:-->
+
+<!--a,b,c > 0-->
+<!--a + b > c-->
+<!--b + c > a-->
+<!--a + c > b-->
+<!--<script>-->
+<!--    let a = +prompt('Enter a');-->
+<!--    let b = +prompt('Enter b');-->
+<!--    let c = +prompt('Enter c');-->
+
+<!--    if (a>0 && b>0 && c>0 && (a+b)>c && (b+c)>a &&(a+c)>b) {-->
+<!--        document.write('Right');-->
+<!--</script>-->
+
+<!--Bai 10-->
+<!--Viết chương trình tính giá điện.-->
+<!--Bậc 1 (0 đến 50kWh): 1.678 đồng/kWh-->
+<!--Bậc 2 (51 đến 100kWh): 1.734 đồng/kWh-->
+<!--Bậc 3 (101 đến 200 kWh): 2.014 đồng/kWh-->
+<!--Bậc 4 (201 đến 300 kWh): 2.536 đồng/kWh-->
+<!--Bậc 5 (301 đến 400 kWh): 2.834 đồng/kWh-->
+<!--Bậc 6 (401 kWh trở lên): 2.927 đồng/kWh-->
+
+<!--<p id="result"></p>-->
+<!--<script>-->
+<!--    let soDien = +prompt('Nhập số điện tiêu thụ');-->
+<!--    let formula6 = (soDien-401)*2.927 + (soDien-301)*2.834 + (soDien-201)*2.536 + (soDien-101)*2.014 + (soDien-51)*1.734 + soDien*1.678;-->
+<!--    let formula5 = (soDien-301)*2.834 + (soDien-201)*2.536 + (soDien-101)*2.014 + (soDien-51)*1.734 + soDien*1.678;-->
+<!--    let formula4 = (soDien-201)*2.536 + (soDien-101)*2.014 + (soDien-51)*1.734 + soDien*1.678;-->
+<!--    let formula3 = (soDien-101)*2.014 + (soDien-51)*1.734 + soDien*1.678;-->
+<!--    let formula2 = (soDien-51)*1.734 + soDien*1.678;-->
+<!--    let formula1 =  soDien*1.678;-->
+
+<!--    if (soDien>=401) {-->
+<!--        document.getElementById('result').innerHTML = 'Số tiền phải trả: ' + formula6 + 'VND';-->
+<!--    } else {-->
+<!--        if (soDien>=301) {-->
+<!--            document.getElementById('result').innerHTML = 'Số tiền phải trả: ' + formula5 + 'VND';-->
+<!--        } else {-->
+<!--            if (soDien>=201) {-->
+<!--                document.getElementById('result').innerHTML = 'Số tiền phải trả: ' + formula4 + 'VND';-->
+<!--            } else {-->
+<!--                if (soDien>=101) {-->
+<!--                    document.getElementById('result').innerHTML = 'Số tiền phải trả: ' + formula3 + 'VND';-->
+<!--                } else {-->
+<!--                    if (soDien>=51) {-->
+<!--                        document.getElementById('result').innerHTML = 'Số tiền phải trả: ' + formula2 + 'VND';-->
+<!--                    } else {-->
+<!--                        document.getElementById('result').innerHTML = 'Số tiền phải trả: ' + formula1 + 'VND';-->
+<!--                    }-->
+<!--                }-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+</body>
+</html>
